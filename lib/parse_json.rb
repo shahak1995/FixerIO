@@ -1,5 +1,6 @@
 require 'json'
 
+# Main class in file
 class ParseJson
   attr_accessor :json_data
 
@@ -13,5 +14,9 @@ class ParseJson
 
   def retrieve_birth_year
     @json_data['born']
+  end
+
+  def retrieve_title
+    @json_data['titles']
   end
 end

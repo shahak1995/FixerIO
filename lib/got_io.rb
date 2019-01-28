@@ -2,8 +2,8 @@ require 'json'
 require_relative 'parse_json'
 require 'httparty'
 
+# Main Class within file
 class GotIo
-  # The name of the Accessor
   attr_accessor :got_data
 
   # Method to fetch Jon Snow Data
@@ -20,5 +20,10 @@ class GotIo
   # Method to fetch the data from attribute born
   def retrieve_birth_year
     @got_data['born']
+  end
+
+  # Method to fetch data from attribute titles
+  def retrieve_title
+    @got_data['titles'].join
   end
 end
