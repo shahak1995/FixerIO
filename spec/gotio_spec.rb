@@ -7,7 +7,7 @@ describe 'gameofthrones api' do
   end
 
   # Test One - Hash
-  it 'should be a hash' do
+  it 'should return a hash for jon snow data' do
     expect(@got.got_data).to be_kind_of(Hash)
   end
 
@@ -21,8 +21,8 @@ describe 'gameofthrones api' do
     expect(@got.retrieve_birth_year).to eq 'In 283 AC'
   end
 
-  # Test Four - Title
-  it 'should output the titles of Jon Snow' do
-    expect(@got.retrieve_title).to eq "Lord Commander of the Night's Watch"
+  # Test Four - String
+  it 'should consist of string data in title field' do
+    expect(@got.retrieve_title[0]).to be_kind_of(String)
   end
 end

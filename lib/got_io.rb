@@ -24,6 +24,6 @@ class GotIo
 
   # Method to fetch data from attribute titles
   def retrieve_title
-    @got_data['titles'].join
+    @got_data['titles']
   end
 end

@@ -1,15 +1,14 @@
 # FixerIO
 ### Description
-Fetch the data from the API through an API call using HTTParty. Then test each of the methods if it brings out the right input through RSpec
+Fetch the data from the API through an API call using the HTTParty Gem. Then test each of the methods if it brings out the right input through RSpec. 
 
 ### Languages used
 * Ruby
 
 ### How to download
-1. Go onto the Github Website
-2. Search for the repo 'shahak1995/GOT_IO'
-3. Switch to the dev branch
-4. Click the clone/download button
+1. Git clone 'https://github.com/shahak1995/GOT_IO
+2. Run 'bundle' in the terminal to install the gems
+3. Run 'rspec'
 
 ### Challenges 
 1. Fetching the data through an API Call
